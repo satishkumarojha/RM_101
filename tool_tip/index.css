@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: aquamarine;
+    border: 0;
+    border-radius: 7px;
+    font-size: 18px;
+}
+.tooltip_left{
+    position: relative;
+    cursor: pointer;
+    margin: 0 25px;
+}
+.tooltiptext_left{
+    position: absolute;
+    left: -50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(50%);
+    background-color: rgb(102, 97, 97);
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition:opacity 0.3s ease;
+
+}
+.tooltiptext_left::before{
+    content: "";
+    position: absolute;
+    top: 12%;
+    left: 80%;
+    transform: translateX(50%);
+    border: 15px solid;
+    border-color: #0000 #0000 #0000 rgb(102, 97, 97);
+}
+.tooltip_left:hover .tooltiptext_left{
+    left: -160%;
+    opacity: 1;
+    visibility: visible;
+}
+.tooltip_right{
+    position: relative;
+    cursor: pointer;
+    margin: 0 15px;
+}
+.tooltiptext_right{
+    position: absolute;
+    right: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(50%);
+    background-color: rgb(102, 97, 97);
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition:opacity 0.3s ease;
+
+}
+.tooltiptext_right::before{
+    content: "";
+    position: absolute;
+    top: 12%;
+    right: 110%;
+    transform: translateX(50%);
+    border: 15px solid;
+    border-color: #0000 rgb(102, 97, 97) #0000 #0000;
+}
+.tooltip_right:hover .tooltiptext_right{
+    right: -60%;
+    opacity: 1;
+    visibility: visible;
+}
+.tooltip_top{
+    position: relative;
+    cursor: pointer;
+    margin: 0 25px;
+}
+.tooltiptext_top{
+    position: absolute;
+    top:0%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-50%);
+    background-color: rgb(102, 97, 97);
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 1;
+    transition:opacity 0.3s ease;
+
+}
+.tooltiptext_top::before{
+    content: "";
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: rgb(102, 97, 97) #0000 #0000 #0000;
+}
+.tooltip_top:hover .tooltiptext_top{
+    top: -130%;
+    opacity: 1;
+    visibility: visible;
+}
+.tooltip_bottom{
+    position: relative;
+    cursor: pointer;
+    margin: 0 25px;
+}
+.tooltiptext_bottom{
+    position: absolute;
+    bottom:0%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-50%);
+    background-color: rgb(102, 97, 97);
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 1;
+    transition:opacity 0.3s ease;
+
+}
+.tooltiptext_bottom::before{
+    content: "";
+    position: absolute;
+    bottom: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: #0000 #0000 rgb(102, 97, 97) #0000;
+}
+.tooltip_bottom:hover .tooltiptext_bottom{
+    bottom: -130%;
+    opacity: 1;
+    visibility: visible;
+}
