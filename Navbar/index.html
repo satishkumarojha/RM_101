@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Navbar</title>
+</head>
+<body>
+    <nav class="navbar" >
+        <input type="checkbox" id="opensidebar" onclick="openSidebar()">
+        <label for="opensidebar" class="sidebarIconToggle">
+            <div class="spinner top"></div>
+            <div class="spinner middle"></div>
+            <div class="spinner bottom"></div>
+        </label>
+        <div class="logo">
+           Masai
+        </div>
+        <div class="pages">
+            <ul>
+                <li>
+                    <select  >
+                        <option value="" selected disabled hidden>Batches</option>
+                        <option value="">Web-15</option>
+                        <option value="">Web-16</option>
+                        <option value="">Web-17</option>
+                    </select>
+                </li>
+                <li>Home</li>
+                <li>About</li>
+                <li>Career</li>
+            </ul>
+        </div>
+        <div class="ham">
+            <button>Account</button>
+        </div>
+    </nav>
+    <div class="sidebar">
+        <p>Home</p>
+        <p>Batches</p>
+        <p>About</p>
+        <p>Career</p>
+    </div>
+</body>
+</html>
+<script src="./script.js"></script>
