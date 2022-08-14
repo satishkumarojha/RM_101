@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debounce</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .debounce{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        button{
+            width: 120px;
+            height: 40px;
+            background-color: blueviolet;
+            color: white;
+            margin: auto;
+            border-radius: 20px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="debounce">
+        <button onclick="debounce(3000)">Debounce</button>
+    </div>
+   
+</body>
+</html>
+<script src="./index.js"></script>
